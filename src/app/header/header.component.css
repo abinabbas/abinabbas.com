@@ -1,0 +1,261 @@
+.intro {
+    padding: 0px 100px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.intro__hello {
+    font-weight: 300;
+}
+
+.emoji {
+    display: inline-block;
+    vertical-align: text-top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro__hello .wave-hand {
+    background-image: url(/assets/emojis/wave.png);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.intro__hello .emoji,
+.intro__tagline .emoji {
+    width: 40px;
+    height: 40px;
+}
+
+.intro__hello,
+.intro__tagline {
+    font-size: 2.3rem;
+}
+
+.intro__tagline {
+    font-weight: 300;
+    max-width: 700px;
+}
+
+.intro__tagline .name {
+    font-weight: 700;
+}
+
+.intro__tagline .technologist {
+    background-image: url(/assets/emojis/technologist.png);
+}
+
+.intro__contact {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.intro__contact .emoji.pointer {
+    background-image: url(/assets/emojis/pointright.png);
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    vertical-align: text-bottom;
+}
+
+.intro__contact .highlight-link {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 3px;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 -3px 0 #007bff;
+    box-shadow: inset 0 -3px 0 #007bff;
+}
+
+.intro__contact .highlight-link:hover {
+    -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
+    box-shadow: inset 0 -33px 0 0 #007bff;
+    color: #fff
+}
+
+.intro__hello .wave-hand.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.intro__hello .wave-hand.wave {
+    -webkit-animation-name: wave;
+    animation-name: wave
+}
+
+@-webkit-keyframes wave {
+    from {
+        -webkit-transform: none;
+        transform: none
+    }
+
+    15% {
+        -webkit-transform: translate3d(-20%,0,0) rotate3d(0,0,1,-10deg);
+        transform: translate3d(-20%,0,0) rotate3d(0,0,1,-10deg)
+    }
+
+    30% {
+        -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,7deg);
+        transform: translate3d(10%,0,0) rotate3d(0,0,1,7deg)
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%,0,0) rotate3d(0,0,1,-10deg);
+        transform: translate3d(-15%,0,0) rotate3d(0,0,1,-10deg)
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,5deg);
+        transform: translate3d(10%,0,0) rotate3d(0,0,1,5deg)
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg);
+        transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg)
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes wave {
+    from {
+        -webkit-transform: none;
+        transform: none
+    }
+
+    15% {
+        -webkit-transform: translate3d(-20%,0,0) rotate3d(0,0,1,-10deg);
+        transform: translate3d(-20%,0,0) rotate3d(0,0,1,-10deg)
+    }
+
+    30% {
+        -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,7deg);
+        transform: translate3d(10%,0,0) rotate3d(0,0,1,7deg)
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%,0,0) rotate3d(0,0,1,-10deg);
+        transform: translate3d(-15%,0,0) rotate3d(0,0,1,-10deg)
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,5deg);
+        transform: translate3d(10%,0,0) rotate3d(0,0,1,5deg)
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg);
+        transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg)
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .intro {
+        padding:120px 70px
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .intro {
+        padding:120px 50px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        padding:70px 50px
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .intro__hello,.intro__tagline {
+        font-size:2.25rem
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro__hello,.intro__tagline {
+        font-size:2rem
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .intro__hello,.intro__tagline {
+        font-size:1.6rem
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .intro__hello,.intro__tagline {
+        font-size:1.5rem
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .intro__hello,.intro__tagline {
+        font-size:1.3rem
+    }
+}
+
+.intro__hello .emoji,.intro__tagline .emoji {
+    width: 40px;
+    height: 40px
+}
+
+@media screen and (max-width: 1024px) {
+    .intro__hello .emoji,.intro__tagline .emoji {
+        width:35px;
+        height: 35px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro__hello .emoji,.intro__tagline .emoji {
+        width:30px;
+        height: 30px
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .intro__hello .emoji,.intro__tagline .emoji {
+        width:25px;
+        height: 25px
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .intro__contact {
+        font-size: 1rem
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .intro__contact .emoji.pointer {
+        width: 25px;
+        height: 25px
+    }
+}

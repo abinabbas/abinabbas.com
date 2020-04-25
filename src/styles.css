@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::-moz-selection {
+  background: #ffdc00;
+}
+
+::selection {
+  background: #ffdc00;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color: #444452;
+  font-family: Apercu, "Source Sans Pro", system, system-ui, -apple-system,
+    BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  width: 100%;
+}
+
+body.night,
+html.night {
+  background-color: #171c28;
+  color: #afafbf;
+}
+
+body.night .switch-wrapper .sun,
+html.night .switch-wrapper .sun {
+  background: url(/assets/switch/sun-white.svg) no-repeat center !important;
+  background-size: 100% !important;
+}
+
+body.night .switch-wrapper .moon,
+html.night .switch-wrapper .moon {
+  background: url(/assets/switch/moon-white.svg) no-repeat center !important;
+  background-size: 100% !important;
+}
+
+body.night .experience .job__time,
+body.night .footer__copyright,
+body.night .intro,
+body.night .skills .skillz__category__label,
+body.night .status,
+body.night a,
+body.night strong,
+html.night .experience .job__time,
+html.night .footer__copyright,
+html.night .intro,
+html.night .skills .skillz__category__label,
+html.night .status,
+html.night a,
+html.night strong {
+  color: #e7e7e7;
+}
+
+
+body.night .section__content .underline-link:after,
+html.night .section__content .underline-link:after {
+  background: #e7e7e7;
+}
+
+body.night ::selection,
+html.night ::selection {
+  color: #36363c;
+  background: #ffdc00;
+}
+
+body.night ::-moz-selection,
+html.night ::-moz-selection {
+  color: #36363c;
+  background: #ffdc00;
+}
