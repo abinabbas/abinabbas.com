@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  public isDarkmode: boolean;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.wave();
+  }
 
   wave(): void{
-    console.log('mouse event');
     document.querySelector('.emoji.wave-hand').classList.add('wave');
     setTimeout(() => {
       document.querySelector('.emoji.wave-hand').classList.remove('wave');

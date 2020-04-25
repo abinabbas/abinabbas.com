@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-switch',
@@ -6,14 +6,11 @@ import { Component, OnInit, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./switch.component.css']
 })
 export class SwitchComponent implements OnInit {
-  public isDarkmode: boolean = false;
+  public isDarkmode: boolean;
 
-  @Output() public darkMode = new EventEmitter();
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   changeTheme(): void {
     let isDarktheme = document.getElementsByTagName('body')[0].classList.contains('night');
