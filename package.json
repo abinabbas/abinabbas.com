@@ -1,6 +1,12 @@
 {
     "name": "developer-being",
-    "version": "0.0.0",
+    "version": "1.0.0",
+    "repository": "abinabbas/abinabbas.com",
+    "author": {
+        "name": "Abin Abbas",
+        "email": "abinabbas@icloud.com",
+        "url": "abinabbas.com"
+      },
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
