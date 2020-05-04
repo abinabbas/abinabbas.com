@@ -1,0 +1,10 @@
+{
+    "languages" : [ "JavaScript", "Node", "PHP", "Python", "TypeScript", "HTML", "CSS" ],
+
+    "frameworks": [ "Express", "Sails", "Loopback", "Angular", "Ionic", "React", "Phaser", "Wordpress" ],
+
+    "tools": [ "Git", "Docker", "Bash", "Swagger", "GCP" ],
+
+    "databases": ["Mysql", "MongoDB"]
+
+}

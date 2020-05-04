@@ -1,0 +1,33 @@
+<section class="section skills" *ngIf=skills>
+    <div class="section__title">Skills</div>
+    <div class="section__content">
+      <!-- <p>I’ve picked up quite a few skills during the course of my three co-ops, and aim to improve these skills everyday. Here are a few of the technologies that I have experience with:</p> -->
+      <div class="skillz">
+        <div class="skillz__category">
+          <div class="skillz__category__label">Languages</div>
+          <ul>
+            <li *ngFor="let language of skills.languages;" class="skillz__category__item">{{language}}</li>
+          </ul>
+        </div>
+        <div class="skillz__category">
+          <div class="skillz__category__label">Frameworks</div>
+          <ul>
+            <li *ngFor="let framework of skills.frameworks;" class="skillz__category__item">{{framework}}</li>
+          </ul>
+        </div>
+        <div class="skillz__category">
+          <div class="skillz__category__label">Tools</div>
+          <ul>
+            <li *ngFor="let tool of skills.tools;" class="skillz__category__item">{{tool}}</li>
+          </ul>
+        </div>
+        <div class="skillz__category">
+          <div class="skillz__category__label">Database</div>
+          <ul>
+            <li *ngFor="let database of skills.databases;" class="skillz__category__item">{{database}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  

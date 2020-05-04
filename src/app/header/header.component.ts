@@ -23,6 +23,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.handEmoji.classList.add('wave');
     setTimeout(() => {
       this.handEmoji.classList.remove('wave');
-    }, 1000);
+    }, 2000);
   }
 }
